@@ -1,0 +1,42 @@
+﻿<Window x:Class="Regular_Expressions.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Regular_Expressions"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <Menu VerticalAlignment="Top">
+                <MenuItem Header="О программе" Click="btnInfo_Click"/>
+                <MenuItem Header="О разработчике" Click="btnProgrammer_Click"/>
+                <MenuItem Header="Выход" Click="btnExit_Click" />
+            </Menu>
+
+            <GroupBox Header="Задание 1" HorizontalAlignment="Left" Height="401" Margin="10,23,0,0" VerticalAlignment="Top" Width="390">
+                <Grid Height="299" Margin="10,0,-3,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="219*"/>
+                        <RowDefinition Height="13*"/>
+                        <RowDefinition Height="9*"/>
+                    </Grid.RowDefinitions>
+                    <ListBox x:Name="listBox1" HorizontalAlignment="Center" Height="105" Margin="0,112,0,0" VerticalAlignment="Top" Width="351"/>
+                    <Button Content="Решить" HorizontalAlignment="Center" Margin="0,232,0,0" VerticalAlignment="Top" Width="351" Click="btnRez1_Click"/>
+                    <TextBox x:Name="outLine1" HorizontalAlignment="Center" Height="47" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="351" IsReadOnly="False" Text="aa aba abba abbba abca abea"/>
+                    <Label Content="Начальная строчка" HorizontalAlignment="Center" Margin="0,-33,0,0" VerticalAlignment="Top" Width="377"/>
+                    <Label Content="Результат" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top" Width="351"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="Задание 2" HorizontalAlignment="Left" Height="401" Margin="405,23,0,0" VerticalAlignment="Top" Width="385">
+                <Grid Height="389" Margin="10,0,0,0">
+                    <ListBox x:Name="listBox2" HorizontalAlignment="Center" Height="105" Margin="0,151,0,0" VerticalAlignment="Top" Width="343"/>
+                    <Button Content="Решить" HorizontalAlignment="Center" Margin="0,270,0,0" VerticalAlignment="Top" Width="343" Click="btnRez_Click"/>
+                    <TextBox x:Name="outLine2" HorizontalAlignment="Center" Height="37" Margin="0,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" IsReadOnly="False" Text="a1a a2a a3a a4a a5a aba aca"/>
+                    <Label Content="Начальная строчка" HorizontalAlignment="Left" VerticalAlignment="Top" Width="353" Margin="0,10,0,0"/>
+                    <Label Content="Результат" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+    </Grid>
+</Window>
